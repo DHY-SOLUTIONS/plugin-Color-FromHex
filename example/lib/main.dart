@@ -1,7 +1,5 @@
+import 'package:color_from_hex/color_from_hex.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,12 +15,22 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          // getFromColorHex
-          Text(getColorFromHex('#FFFFFF'))
-        ],
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                getColorFromHex('#FFFFFF').toString(),
+                style: const TextStyle(fontSize: 20),
+              ),
+              const SizedBox(height: 20),
+              Text(getColorFromHex('#FFFFFF').toHex().toString(),
+                  style: const TextStyle(fontSize: 20))
+            ],
+          ),
+        ),
       ),
     );
   }
