@@ -1,6 +1,6 @@
 name: color_from_hex
 description: "A flutter widget for ColorFromHex."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/DHY-SOLUTIONS/plugin-Color-FromHex.git
 
 environment:
