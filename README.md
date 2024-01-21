@@ -13,10 +13,10 @@ How to use:
 
 ```dart
      Text( getColorFromHex('#FFFFFF').toString(),
-          style: const TextStyle(fontSize: 20),),
+          style: const TextStyle(fontSize: 20),), // Color(0xffffff)
 ```
 
 ```dart
     Text(getColorFromHex('#FFFFFF').toHex().toString(),
-          style: const TextStyle(fontSize: 20))
+          style: const TextStyle(fontSize: 20)) //#ffffff
 ```
