@@ -1,15 +1,22 @@
 # color_from_hex
 
-A new Flutter plugin project.
+Convert colors from HexColor
 
-## Getting Started
+## Feature
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- Color From Hex
+- Color To Hex
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Getting started
 
+How to use:
+
+```dart
+     Text( getColorFromHex('#FFFFFF').toString(),
+          style: const TextStyle(fontSize: 20),),
+```
+
+```dart
+    Text(getColorFromHex('#FFFFFF').toHex().toString(),
+          style: const TextStyle(fontSize: 20))
+```
